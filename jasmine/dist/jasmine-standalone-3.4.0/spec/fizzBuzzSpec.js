@@ -1,12 +1,17 @@
 describe('fizzBuzz', function() {
   var fizzbuzz;
 
-  beforEach(function() {
+  beforeEach(function() {
     fizzbuzz = new fizzBuzz();
   });
 
-  it ("can return numbers up to 100", function() {
-    var numbers = fizzbuzz.list;
+  it ("can return an array 100 long", function() {
+    var numbers = fizzbuzz.list();
     expect(numbers.length).toEqual(100);
-  }
+  })
+
+  it ("can return numbers up to 100", function() {
+    var numbers = fizzbuzz.list();
+    expect(numbers[numbers.length-1]).toEqual(100);
+  })
 });
