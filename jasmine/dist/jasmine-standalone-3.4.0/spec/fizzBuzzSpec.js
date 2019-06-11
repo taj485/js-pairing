@@ -12,7 +12,7 @@ describe('fizzBuzz', function() {
 
   it ("can return numbers up to 100", function() {
     var numbers = fizzbuzz.list();
-    expect(numbers[numbers.length-1]).toEqual(100);
+    expect(numbers[97]).toEqual(98);
   })
 
   it ("can return fizz when number divides by 3", function() {
@@ -23,6 +23,11 @@ describe('fizzBuzz', function() {
   it ("can return buzz when number is divisable by 5", function() {
     var numbers = fizzbuzz.list();
     expect(numbers[4]).toEqual("buzz");
+  })
+
+  it ("can return fizzbuzz when number is divisable by 3 and 5,", function() {
+    var numbers = fizzbuzz.list();
+    expect(numbers[14]).toEqual("fizzBuzz");
   })
 
 });
