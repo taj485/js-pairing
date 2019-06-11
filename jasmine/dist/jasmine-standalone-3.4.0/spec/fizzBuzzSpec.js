@@ -20,4 +20,9 @@ describe('fizzBuzz', function() {
     expect(numbers[2]).toEqual("fizz");
   })
 
+  it ("can return buzz when number is divisable by 5", function() {
+    var numbers = fizzbuzz.list();
+    expect(numbers[4]).toEqual("buzz");
+  })
+
 });

@@ -6,6 +6,8 @@ fizzBuzz.prototype.list = function() {
     var number = i + 1;
     if (number % 3 === 0) {
       numbers[i] = "fizz";
+    } else if (number % 5 === 0) {
+      numbers[i] = "buzz";
     } else {
       numbers[i] = number;
     }
